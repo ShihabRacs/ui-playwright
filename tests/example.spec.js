@@ -1,4 +1,4 @@
-// @ts-check
+
 const { test, expect } = require('@playwright/test');
 
 test.beforeEach(async ({ page }) => {
@@ -20,9 +20,14 @@ test.describe('Test Suite', () => {
     
 
     // const counts = await page.locator("career-lever-v3__job-category-content")   //class="career-lever-v3__job-category-content"
-    console.log(categories.length);
+    console.log('There are '+categories.length+' Categories');
 
     });
+
+    // test.afterAll(async ({ page }) => {
+    //   await browser.close();
+    // });
+    // // await browser.close();
 
   
 });
